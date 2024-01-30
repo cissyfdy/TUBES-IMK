@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: 'poppins', sans-serif;
+}
+.sidebar {
+  position: fixed;
+  left: 0px;
+  width: 250px;
+  height: 100%;
+  background: #042331;
+  transition: all .5s ease;
+}
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #063146;
+  user-select: none;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  left: 250px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .5s;
+}
+label #cancel{
+  z-index: 1111;
+  left: 195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+  left: -250px;
+}
+#check:checked ~ label #btn{
+  left: 40px;
+  opacity: 1;
+  pointer-events: auto;
+}
+#check:checked ~ label #cancel{
+  left: -195px;
+}
+#check:checked ~ section{
+  margin-left: 0px;
+}
+section{
+  background: url(bg.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+  margin-left: -250px;
+}
+
+img {
+    width: 100px;
+    margin-left:1.5cm;
+    margin-top: 0.3cm;
+  }
+
+body{
+    background-color: rgb(255, 254, 254);
+}
+.logo{
+    background: #042331;
+    display: block;
+  }
+
+
+
+
+
+
+
+.riwayat{
+  font-size: 2rem;
+  padding-top: 1cm;
+  padding-left: 8cm;
+  box-shadow: #333;
+}
+
+.topnav{
+  float: right;
+  padding-right: 1cm;
+  padding-top: 1cm;
+
+}
+
+.topnav input[type=text] {
+  font-size: 25px;
+  border-radius: 0.5rem;
+  border : 0.2rem solid rgba(0, 0, 0, 0.3);
+}
+
+.topnav i{
+    font-size: 15px;
+    color: #333;
+    cursor : pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border : 0.2rem solid rgba(0, 0, 0, 0.3);
+}
+
+.table_section{
+  float: right;
+  font-size: 10rem;
+  margin-top: 5%;
+  padding-bottom: 3cm;
+  padding-left: 11cm;
+  padding-right: 9cm;
+  width: 25%;
+  height: 15%;
+  display: flex;
+  
+}
+
+th,
+td {
+    border-bottom: 1px solid #503e3e;
+    padding: 10px 20px;
+    font-size: 20px;
+    width: 70%;
+    height: 25%;
+    
+}
+
+.add{
+  font-size: 1rem;
+  padding-top: 5cm;
+  padding-left: 8cm;
+
+}
+
+.add button{
+  width: 15%;
+  height: 30%;
+  cursor: pointer;
+}
+
+i{
+  cursor: pointer;
+}
+
+
+
+
